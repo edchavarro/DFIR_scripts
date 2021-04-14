@@ -1,0 +1,38 @@
+4720, "[A user account was created]"
+4722, "[A user account was enabled]"
+4723, "[A user attempted to change an account’s password]"
+4724, "[An attempt was made to reset an account’s password]"
+4725, "[A user account was disabled]"
+4726, "[A user account was deleted]"
+4727, "[A security-enabled global group was created]"
+4728, "[A member was added to a security-enabled global group]"
+4729, "[A member was removed from a security-enabled global group]"
+4730, "[A security-enabled global group was deleted]"
+4731, "[A security-enabled local group was created]"
+4732, "[A member was added to a security-enabled local group]"
+4733, "[A member was removed from a security-enabled local group]"
+4734, "[A security-enabled local group was deleted]"
+4735, "[A security-enabled local group was changed]"
+4737, "[A security-enabled global group was changed]"
+4738, "[A user account was changed]"
+4741, "[A computer account was created]"
+4742, "[A computer account was changed]"
+4743, "[A computer account was deleted]"
+4754, "[A security-enabled universal group was created]"
+4755, "[A security-enabled universal group was changed]"
+4756, "[A member was added to a security-enabled universal group]"
+4757, "[A member was removed from a security-enabled universal group]"
+4758, "[A security-enabled universal group was deleted]"
+4798, "[A user’s local group membership was enumerated]"
+4799, "[A security-enabled local group membership was enumerated]" 
+4624, "[User logon] this month",,0,1
+4625, "[An account failed to logon]", grep '\[4625 ' timeline.log|grep -vi SuppressDuplicateDuration
+4625, "[An account failed to logon] for this month", grep '\[4625 ' timeline.log|grep -vi SuppressDuplicateDuration,0,1
+7045, "[A service was installed in the system]"
+7045, "[A service was installed in the system] for this month",,1,1
+1102, "[Audit log was cleared]"
+1102, "[Audit log was cleared] for this month",,1,1
+,"Sysinternals suite",grep -iE 'psexe|procdump|handle\.exe|handle64\.exe' timeline.log
+,"malicious known files and applications",grep -iE 'processhacker|peview|NetworkShare' timeline.log
+,"Powershell -enc",grep -i powershell timeline.log |grep -i '\-e |\-enc '
+,"Powershell -enc specific",grep -i powershell timeline.log |grep -i '\-e |\-enc '|grep -iE 'JAB*|SUVYI*|aWV4I*|SQBFAFgA*|aQBlAHgA*',1,1
