@@ -1,6 +1,6 @@
 # DFIR_scripts
 
-This space contains scripts I have created to try to automate basic analysis or triage for incident evidence.
+This space contains scripts I have created to try to automate basic analisys or triage for incident evidence.
 
 It works for me, maybe could be useful for you.
 
